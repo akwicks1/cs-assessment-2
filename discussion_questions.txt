@@ -1,0 +1,30 @@
+I got THE book.  Problem Solving with algorithms and data structures using python.  It is amazing.  Some of the answers are based on that book.
+Recursion
+1.  Recursion involves breaking down a problem into smaller and simpler pieces.  The three laws of recursion are: they must have a base case, must change it's state and move towards that base case and it must call itself recursively.  
+2.  It is necessary to have a base case because the recursion has to know when to stop.  Otherwise you would error out - reaching maximum recursion depth.
+Graphs
+1.  A graph is a general data structure that is used to establish relationships between different nodes(vertices).  If the relationship between the 'arcs'/pointers (the edges) are one-way the graph is a directed graph, otherwise it's an undirected graph. 
+2.  A graph is more than general tree, they can contain loops(cycles).
+3.  A road map is a great example of what a graph can be used for.  There can be multiple stops and different routes to get to and from the same location.  Weighted edges can be applied as well to represent the amount of time, the distance or the gas money it takes to get from A to B.
+
+Data Structure					Index	Search	Add-R	Add-L	Pop-L	Pop-R
+Python List (Array)				O(1)	O(n)	O(1)	O(n) 	O(n) 	O(1) 
+Linked List	 	 	 	 	 	O(n)	O(n)	O(1)*	O(1)	O(1) 	O(1)*
+Doubly-Linked List	 	 	 	O(n)	O(n)	O(1)*	O(1) 	O(1)	O(1)* 	 
+Queue (as Array)				X		X	 	O(1)	X	 	O(n)	X
+Queue (as LL or DLL)			X		X	 	O(1)	X	 	O(1)	X
+Stack (as Array, LL, or DLL)	X		X	 	O(1)	X		X	 	O(1)
+Deque (as DLL)					X		X	 	O(1)	O(1)	(O1)	O(1) 	
+*Assuming there is a tail attribute on the list
+
+Data Structure					Get		Add		Delete	Iterate		Memory
+Dictionary (Hash Map)			O(1)	O(1)	O(1)	O(n)		medium
+Set (Hash Map)	 	 	 	 	O(1)	O(1)	O(1)	O(n) 		medium
+Binary Search Tree	 	 	 	O(logn) O(logn) O(logn) O(n)	 	small
+Tree	 	 	 	 	 		O(n)	O(n)	O(n)	O(n)		small
+
+Sorting
+1.  Bubble sort goes through the list several times, comparing each adjacent item and switching them when they are out of order.  Each item 'bubbles up' to where it belongs.  It has a runtime of O(n^2).
+2.  Merge sort is a 'divide and conquer' recursive algorithm.  It splits the list in half and sorted appropriately.  Then the two newly sorted lists are merged back together.  It has a runtime of O(n log n) but it takes up a lot of memory.
+3.  Quick sort is a 'divide and conquer' algorithm but does it by choosing a pivot value (split point).  The split point pivots right through the list swapping places with lower values.  When it hits a higher value the position of the right side becomes the pivot point. Worse case runtime of (On^2).
+
